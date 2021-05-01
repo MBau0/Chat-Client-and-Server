@@ -30,9 +30,6 @@ public:
 	bool s_send(const char* data, int* len, int client_id);
 
 	void load_server_commands();
-	void load_world_server_to_client(void* buf, int size);
-	void new_entity(void* buf, int size);
-	void set_destination(void* buf, int size);
 	void new_message(void* buf, int size);
 	void set_name(void* buf, int size);
 private:
