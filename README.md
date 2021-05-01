@@ -1,4 +1,4 @@
-# Chat Client / Server
+# Chat Application
 Chat Application for Windows written in C/C++ using Winsock (windows networking library) and Qt (cross-platform gui).
 
 # Table of Contents
@@ -8,13 +8,17 @@ Chat Application for Windows written in C/C++ using Winsock (windows networking 
   - [Server](#server)
   - [Client](#client)
   - [Packet](#packet)
-  - [Commands](#commands) 
+  - [Commands](#commands)
 
-# Libraries
+ 
+[Screenshots](#screenshots)  
+[Status](#status)  
+
+## Libraries
 [Qt VS Tools 5.1](https://doc.qt.io/qtvstools/index.html)  
 [Winsock](https://docs.microsoft.com/en-us/windows/win32/winsock/windows-sockets-start-page-2)
 
-# How it works
+## How it works
 
 ### Server
   -Accepts and manages connections from clients  
@@ -52,7 +56,7 @@ Example:
 ### Commands
   -Executes a function based on the command name of a packet    
   -Function pointers   
-  -Client and Server have their own commands that they cause the other to excute  
+  -Client and Server have their own commands that they cause the other to execute  
   -Defined as ```void function(void* buf, int size) ```
   
   Example:
@@ -79,3 +83,15 @@ void Client::new_message(void* buf, int size) {
 }
 
 ```
+
+## Screenshots
+![](https://github.com/willardt/Chat-Client-and-Server/blob/main/ss/ss.png?raw=true "") 
+![](https://github.com/willardt/Chat-Client-and-Server/blob/main/ss/ss2.png?raw=true "")  
+![](https://github.com/willardt/Chat-Client-and-Server/blob/main/ss/ss3.png?raw=true "")  
+
+## Status
+
+The main purpose of this project was to learn and experiement using winsock to create a client and server for data transfering.  
+I dont have any plans to continue developing the chat application part of this project, but I may redesign the Server / Client for future projects.
+
+
