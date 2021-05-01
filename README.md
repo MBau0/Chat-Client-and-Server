@@ -23,12 +23,12 @@ Chat Application for Windows written in C/C++ using Winsock (windows networking 
 ### Server
   -Accepts and manages connections from clients  
   -Sends packets to all connected clients  
-  -Contains commands to exectue from clients  
+  -Contains commands to execute from clients  
   -Each connected client recieves its own thread, where the server listens to the client socket and recieves data from  
   
   Command examples:  
   "new_message" -- recieves a message from a client and sends it out all connected clients  
-  "set_name"    -- recieves a message from a client and set the client name
+  "set_name"    -- recieves a message from a client and sets the client's name
 
 ### Client
   -Connects the chat application to the server  
@@ -38,10 +38,16 @@ Chat Application for Windows written in C/C++ using Winsock (windows networking 
   Command examples:  
   "set_id"      -- sets the client id to match the id created by the server  
   "new_message" -- recieves a message that was sent to the server by a client
+  
 ### Packet
-  -Constructs one const char* from multiple variables to send over socket connections
+  -Constructs a c-string from multiple variables to send over socket connections
 
-Example Constructor: template<typename ... Args> PacketData(Args ... args);  
+Example Constructor: 
+
+```C++ 
+  template<typename ... Args>
+  PacketData(Args ... args); 
+``` 
   -Constructs a binary array by casting the arguments as u_int8_t
   
 An expected packet is has the following argument format:  
