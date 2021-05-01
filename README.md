@@ -97,7 +97,7 @@ void Client::new_message(void* buf, int size) {
 
 ## Status
 
-The main purpose of this project was to learn and experiement using winsock to create a client and server for data transfering.  
+The main purpose of this project was to learn and experiement using winsock to create a client and server for networking.
 I dont have any plans to continue developing the chat application part of this project, but I may redesign the Server / Client for future projects.
 
 
