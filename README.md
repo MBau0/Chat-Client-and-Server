@@ -12,7 +12,7 @@ Chat Application for Windows written in C/C++ using Winsock (windows networking 
 
  
 [Screenshots](#screenshots)  
-[Status](#status)  
+[End Note](#end-note)  
 
 ## Libraries
 [Qt VS Tools 5.1](https://doc.qt.io/qtvstools/index.html) GUI Library  
@@ -95,7 +95,7 @@ void Client::new_message(void* buf, int size) {
 ![](https://github.com/willardt/Chat-Client-and-Server/blob/main/ss/ss2.png?raw=true "")  
 ![](https://github.com/willardt/Chat-Client-and-Server/blob/main/ss/ss3.png?raw=true "")  
 
-## Status
+## End Note
 
 The main purpose of this project was to learn and experiement using winsock to create a client and server for networking.  
 I dont have any plans to continue developing the chat application part of this project, but I may redesign the Server / Client for future projects.
