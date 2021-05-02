@@ -15,7 +15,7 @@ Chat Application for Windows written in C/C++ using Winsock (windows networking 
 [Status](#status)  
 
 ## Libraries
-[Qt VS Tools 5.1](https://doc.qt.io/qtvstools/index.html) GUI Library
+[Qt VS Tools 5.1](https://doc.qt.io/qtvstools/index.html) GUI Library  
 [Winsock](https://docs.microsoft.com/en-us/windows/win32/winsock/windows-sockets-start-page-2) Windows network library
 
 ## How it works
